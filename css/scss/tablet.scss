@@ -1,0 +1,64 @@
+
+main{
+
+    .hero {
+        display: grid;
+        grid-template-columns: repeat(2, 200px);
+        justify-content: space-evenly;
+        justify-items: center;
+        column-gap: 10px;
+        grid-template-areas: 
+        "titulo img"
+        "parrafo img"
+        "boton img";
+    
+        .title {
+            width: 280px;
+            margin-top: 30px;
+            font-size: 2.5rem;
+            grid-area: titulo;
+        }
+    
+        .parrafo {
+            width: 35vw;
+            height: 20vh;
+            font-size: 1.5rem;
+            margin-top: 20px;
+            grid-area: parrafo;
+        }
+    
+        .reservacion {
+            width: 15vw;
+            height: 5vh;
+            grid-area: boton;
+        }
+    
+        .platillo {
+            width: 52vw;
+            height: 60vh;
+            grid-area: img;
+
+        }
+
+    }
+
+    .nuestros--servicios-contain {
+        padding: 30px;
+        .nuestros--servicios {
+            grid-template-columns: repeat(4, minmax(125px, 150px));
+            grid-auto-rows: 170px;
+            grid-template-areas: 
+            "uno uno dos tres"
+            "uno uno cuatro sinco";
+            gap: 20px;
+        }
+    }
+    
+    .menu-item {
+        grid-template-columns: repeat(5, 110px);
+        grid-auto-rows: 200px;
+
+    }
+
+}
+
